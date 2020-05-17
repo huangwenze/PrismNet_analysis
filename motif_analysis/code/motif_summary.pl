@@ -8,6 +8,8 @@ my $prot_cell = $ARGV[0];
 
 my $usage = "This script is to compare the motif similarity of each RBP model and combine the similar motifs.
 usage: $0 <prot_cell>
+
+example: perl motif_summary.pl SRSF1_HepG2
 ";
 die $usage if $#ARGV<0;
 

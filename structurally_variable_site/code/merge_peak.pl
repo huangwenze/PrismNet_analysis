@@ -3,11 +3,12 @@ use strict;
 use Cwd;
 use List::Util qw/max min sum maxstr minstr shuffle/;
 
-#bsub -q Z-ZQF -n 1 -o out3.log -e err3.log "perl merge_peak2.pl dyn_str_number.txt"
 
 my $outfile = $ARGV[0];
 my $usage = "This script is to merge the overlapped structure change window.
 usage: $0 <outfile> 
+
+example: perl merge_peak.pl dyn_str_number.txt
 ";
 die $usage if $#ARGV<0;
 

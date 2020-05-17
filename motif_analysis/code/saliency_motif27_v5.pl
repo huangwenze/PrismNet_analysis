@@ -7,16 +7,20 @@ my $prot_cell = $ARGV[0];
 
 my $usage = "This script is to build the motif from PrismNet model output attention file.
 usage: $0 <prot_cell>
+
+example: perl saliency_motif27_v5.pl SRSF1_HepG2
 ";
 die $usage if $#ARGV<0;
 
-my $infile = "/150T/zhangqf2/huangwz/structure_motif/human_dataset6/data22_train/".$prot_cell."_5v_binary_99999_binary_icbind_1_pu_ana0_test.txt";
+#the input file containing the attention signal.
+my $infile = $prot_cell."_5v_binary_99999_binary_icbind_1_pu_ana0_test.txt";
+
+
 my $site_file = $prot_cell."_seq_20_8";
 my $kmer_file = $prot_cell."_seq_6kmer";
 my $motif_file = $prot_cell."_motif_10";
 
 my $bind_inf = &fdata_read3($infile);
-#my $site_seq = &bind_select1($bind_inf, 10);
 my $site_seq = &bind_select3($bind_inf, 10, 0.8, 0.2, $prot_cell);
 my %sseq = %{$site_seq};
 

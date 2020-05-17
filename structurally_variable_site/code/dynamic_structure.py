@@ -4,6 +4,8 @@ import numpy as np
 from scipy.spatial.distance import pdist
 from scipy import stats
 
+#This script is to calculate the number of structure change nucleotides and the L1 distance of the windows of trancripts between different cell lines.
+
 def read_shape(shape_file):
     """
     shape_file       -- A file of shape data

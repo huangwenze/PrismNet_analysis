@@ -1,8 +1,8 @@
-## PrismNet_analysis
+# PrismNet_analysis
 the analysis script for PrismNet paper:
 Predicting dynamic cellular protein-RNA interactions using deep learning and in vivo RNA structure
 
-# structurally_variable_site
+### structurally_variable_site
 The scripts are used to calculate the structure change distance score of transcipt regions and and search the structurally variable sites between different cell. We provided the result of structurally variable sites between each pair of cell lines.
 
 # RBP_binding_site

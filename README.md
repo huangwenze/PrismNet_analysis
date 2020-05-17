@@ -1,4 +1,4 @@
-# PrismNet_analysis
+## PrismNet_analysis
 the analysis script for PrismNet paper:
 Predicting dynamic cellular protein-RNA interactions using deep learning and in vivo RNA structure
 
